@@ -1,0 +1,8 @@
+<h5 class="gift-wrapping-title"><%= Spree.t(:gift_wrapping) %></h5>
+<div class="gift-wrapping-box">
+  <%= form.check_box :preferred_gift_wrapping %>
+  <%= form.label :preferred_gift_wrapping, Spree.t(:gift_wrapping) %>
+  <br/>
+  <%= form.label :preferred_gift_wrapping_message, Spree.t(:gift_wrapping_message) %>
+  <%= form.text_area :preferred_gift_wrapping_message, disabled: true %>
+</div>

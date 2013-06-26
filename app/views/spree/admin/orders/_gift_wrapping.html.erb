@@ -1,0 +1,6 @@
+<% if order.prefers_gift_wrapping? %>
+<fieldset class="no-border-bottom">
+  <legend><%= Spree.t(:gift_wrapping_message) %></legend>
+  <%= order.preferred_gift_wrapping_message %>
+</fieldset>
+<% end %>

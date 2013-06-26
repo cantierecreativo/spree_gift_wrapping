@@ -1,7 +1,7 @@
-SpreeGiftWrapping
+Spree Gift Wrapping
 =================
 
-Introduction goes here.
+Gift Wrapping option for Spree, Amazon style.
 
 Installation
 ------------
@@ -9,7 +9,7 @@ Installation
 Add spree_gift_wrapping to your Gemfile:
 
 ```ruby
-gem 'spree_gift_wrapping'
+gem 'spree_gift_wrapping', github: 'cantierecreativo/spree_gift_wrapping'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -19,22 +19,19 @@ bundle
 bundle exec rails g spree_gift_wrapping:install
 ```
 
+Usage
+-----
+
+To use the extension in your custom frontend views just add
+
+```erb
+<%= render "spree/checkout/gift_wrapping", form: @order_form %>
+```
+
 Testing
 -------
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
+TODO (as usual)
 
-```shell
-bundle
-bundle exec rake test_app
-bundle exec rspec spec
-```
 
-When testing your applications integration with this extension you may use it's factories.
-Simply add this require statement to your spec_helper:
-
-```ruby
-require 'spree_gift_wrapping/factories'
-```
-
-Copyright (c) 2013 [name of extension creator], released under the New BSD License
+Copyright (c) 2013 Cantiere Creativo, released under the New BSD License
