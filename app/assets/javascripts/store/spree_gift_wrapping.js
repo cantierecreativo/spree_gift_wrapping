@@ -1,10 +1,12 @@
 $(function() {
     function giftcheck() {
         if ($('#order_preferred_gift_wrapping').prop('checked')) {
-            $('#order_preferred_gift_wrapping_message').prop('disabled', false);
+            $('#order_preferred_gift_wrapping_message').show();
+            $('#order_preferred_gift_receiving_email').show();
         }
         else {
-            $('#order_preferred_gift_wrapping_message').prop('disabled', true);
+            $('#order_preferred_gift_receiving_email').hide();
+            $('#order_preferred_gift_wrapping_message').hide();
         }
     }
 
