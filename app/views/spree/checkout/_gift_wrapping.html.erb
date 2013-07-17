@@ -3,6 +3,17 @@
   <%= form.check_box :preferred_gift_wrapping %>
   <%= form.label :preferred_gift_wrapping, Spree.t(:gift_wrapping) %>
   <br/>
-  <%= form.label :preferred_gift_wrapping_message, Spree.t(:gift_wrapping_message) %>
-  <%= form.text_area :preferred_gift_wrapping_message, disabled: true %>
+  <div id="#preferred_gift_wrapping_message_info">
+    <%= form.label :preferred_gift_wrapping_receiving_email, Spree.t(:gift_wrapping_receiving_email) %>
+    <%= form.text_field :preferred_gift_wrapping_receiving_email, disabled: true %>
+
+    <%= form.label :preferred_gift_wrapping_intestation, Spree.t(:gift_wrapping_intestation) %>
+    <%= form.text_field :preferred_gift_wrapping_intestation, disabled: true %>
+
+    <%= form.label :preferred_gift_wrapping_message, Spree.t(:gift_wrapping_message) %>
+    <%= form.text_area :preferred_gift_wrapping_message, disabled: true %>
+
+    <%= form.label :preferred_gift_wrapping_sign, Spree.t(:gift_wrapping_sign) %>
+    <%= form.text_field :preferred_gift_wrapping_sign, disabled: true %>
+  </div>
 </div>
