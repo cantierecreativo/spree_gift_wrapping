@@ -4,6 +4,6 @@
 en:
   spree:
     gift_wrapping:        "Gift Wrapping"
-    gift_receiving_email: "Receiving email"
+    gift_wrapping_receiving_email: "Receiving email"
     gift_wrapping_message: "Gift Message"
 

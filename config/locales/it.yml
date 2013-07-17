@@ -4,6 +4,6 @@
 it:
   spree:
     gift_wrapping: "Idea Regalo"
-    gift_receiving_email: "Email ricevente"
+    gift_wrapping_receiving_email: "Email ricevente"
     gift_wrapping_message: "Messaggio Regalo"
 
