@@ -5,15 +5,15 @@
   <br/>
   <div id="#preferred_gift_wrapping_message_info">
     <%= form.label :preferred_gift_wrapping_receiving_email, Spree.t(:gift_wrapping_receiving_email) %>
-    <%= form.text_field :preferred_gift_wrapping_receiving_email, disabled: true %>
+    <%= form.text_field :preferred_gift_wrapping_receiving_email, disabled: true, class: 'required' %>
 
     <%= form.label :preferred_gift_wrapping_intestation, Spree.t(:gift_wrapping_intestation) %>
-    <%= form.text_field :preferred_gift_wrapping_intestation, disabled: true %>
+    <%= form.text_field :preferred_gift_wrapping_intestation, disabled: true, class: 'required' %>
 
     <%= form.label :preferred_gift_wrapping_message, Spree.t(:gift_wrapping_message) %>
-    <%= form.text_area :preferred_gift_wrapping_message, disabled: true %>
+    <%= form.text_area :preferred_gift_wrapping_message, disabled: true, class: 'required' %>
 
     <%= form.label :preferred_gift_wrapping_sign, Spree.t(:gift_wrapping_sign) %>
-    <%= form.text_field :preferred_gift_wrapping_sign, disabled: true %>
+    <%= form.text_field :preferred_gift_wrapping_sign, disabled: true, class: 'required'%>
   </div>
 </div>

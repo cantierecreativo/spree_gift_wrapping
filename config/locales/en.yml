@@ -5,5 +5,6 @@ en:
   spree:
     gift_wrapping:        "Gift Wrapping"
     gift_wrapping_receiving_email: "Receiving email"
+    gift_wrapping_intestation:     "Intestation"
     gift_wrapping_message: "Gift Message"
-
+    gift_wrapping_sign:    "Sign"
