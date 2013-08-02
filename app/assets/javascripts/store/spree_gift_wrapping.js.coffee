@@ -19,4 +19,4 @@ $ ->
     require_field field, required for field in ['sign', 'intestation', 'receiving_email', 'message']
 
   giftcheck()
-  $('#order_preferred_gift_wrapping').on('change', giftcheck);
+  $('#order_preferred_gift_wrapping').on('change', giftcheck)
