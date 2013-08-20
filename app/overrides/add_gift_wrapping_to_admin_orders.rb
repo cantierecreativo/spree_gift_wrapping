@@ -5,7 +5,7 @@ Deface::Override.new(:virtual_path => "spree/admin/orders/index",
 
 Deface::Override.new(:virtual_path => "spree/admin/orders/index",
                      :name => 'add_gift_wrapping_column_to_admin_orders_table',
-                     :erb => "<td class=\"align-center\"><%= order.prefers_gift_wrapping? %></td>",
+                     :erb => "<td class=\"align-center\"><span class=\"<%= order.prefers_gift_wrapping? ? 'icon-gift' : '' %>\"></span></td>",
                      :insert_before => "td[data-hook='admin_orders_index_row_actions']")
 
 Deface::Override.new(:virtual_path => "spree/admin/orders/_form",
