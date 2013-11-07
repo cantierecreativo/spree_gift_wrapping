@@ -9,9 +9,10 @@ module Spree
 
     attr_accessible :preferred_gift_wrapping, :preferred_gift_wrapping_message, :preferred_gift_wrapping_intestation, :preferred_gift_wrapping_sign, :preferred_gift_wrapping_receiving_email
 
-#    insert_checkout_step :gift, before: :address, if: lambda { |order| order.prefers_gift_wrapping? }
+    insert_checkout_step :gift, before: :delivery, if: lambda { |order| order.prefers_gift_wrapping? }
     [:preferred_gift_wrapping_intestation, :preferred_gift_wrapping_message, :preferred_gift_wrapping_sign].each do |attrib|
-      validates attrib, presence: true, if: lambda { self.prefers_gift_wrapping? && self.state == "gift" }
+      validates attrib, presence: true, if: lambda { self.prefers_gift_wrapping? && self.state == "gift" && !self.state_changed? }
     end
+
   end
 end
